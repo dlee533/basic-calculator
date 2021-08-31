@@ -3,11 +3,43 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <style>
+      #calculator {
+        display: flex;
+        flex-direction: column;
+        width: 69vh;
+      }
+
+      #keyPad {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      td {
+        border: solid;
+        padding: 5vh;
+        text-align: center;
+        font-size: 5vh;
+      }
+
+      #displayScreen {
+        border: solid;
+        padding: 1vh;
+        text-align: right;
+        font-size: 5vh;
+      }
+    </style>
     <title>Calculator App</title>
   </head>
   <body>
     <header id="header"></header>
-    <div id="root"></div>
+    <div id="calculator">
+      <div id="displayScreen"></div>
+      <div id="keyPad">
+        <div id="numberPad"></div>
+        <div id="opPad"></div>
+      </div>
+    </div>
   </body>
 </html>
